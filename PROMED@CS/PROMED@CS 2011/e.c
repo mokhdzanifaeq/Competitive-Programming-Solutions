@@ -21,7 +21,7 @@ int main(int argc, char const *argv[])
 		for (j = 1; j <= min; j++) {
 			hp = fmod( (hp + 0.5), 360.0 );
 			mp = fmod( (mp + 6.0), 360.0 );
-			if (mp < hp)
+			if (mp < hp && !counter)
 				counter = 1;
 			else if (counter) {
 				counter = 0;
