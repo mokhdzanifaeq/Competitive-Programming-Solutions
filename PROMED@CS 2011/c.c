@@ -50,6 +50,6 @@ int main(int argc, char const *argv[])
 				sum += map[j][k];
 		sprintf(output, "%sCase %d: %.2f degrees\n", output, i + 1, (float)sum/key);
 	}
-	printf("\n\n%s", output);
+	printf("\n%s", output);
 	return 0;
 }

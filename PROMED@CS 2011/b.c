@@ -10,7 +10,6 @@ int main(int argc, char const *argv[])
  	for (;i < tcase; i++) {
  		char combination[8] = {0};
  		scanf("%s", input);
- 		sprintf(output, "%s%s", output, "\n");
  		length = strlen(input);
  		for (j = 0; j < length; j += 3) {
  			sprintf(current, "%c%c%c", input[j], input[j+1], input[j+2]);
@@ -19,7 +18,8 @@ int main(int argc, char const *argv[])
  		}
  		for (j = 0; j < 8; j++)
  			sprintf(output, "%s%d", output, combination[j]);
+ 		strcat(output, "\n");
  	}
- 	printf("%s\n", output);
+ 	printf("\n%s", output);
  	return 0;
  }

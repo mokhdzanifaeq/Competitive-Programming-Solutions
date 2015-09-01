@@ -30,6 +30,6 @@ int main(int argc, char const *argv[])
 		}
 		sprintf(output, "%s%02d:%02d %02d:%02d %d\n", output, ih, im, fh, fm, count);
 	}
-	printf("\n\n%s", output);
+	printf("\n%s", output);
 	return 0;
 }

@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
 	{
 		sprintf(output, "%s%s", output, "\n\n");
 		scanf(" %[^\n]", input);
-		length = strlen(input) - 1;
+		length = strlen(input) - 2;
 		for (j = 0; j < length; ++j)
 			sprintf(output, "%s%s", output, input[j] == ' ' ? "\n" : "*");
 	}

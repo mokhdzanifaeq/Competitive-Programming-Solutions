@@ -26,6 +26,6 @@ int main(int argc, char const *argv[])
 		sprintf(output, "%sCase %d: %d\n", output, i + 1, n);
 		strcpy(dividend, ""); //empty dividend
 	}
-	printf("\n\n%s", output);
+	printf("\n%s", output);
 	return 0;
 }
